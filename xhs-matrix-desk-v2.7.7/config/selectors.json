@@ -1,0 +1,46 @@
+{
+  "_comment": "小红书页面 DOM 会不定期变化。若发布填充失效，请运行发布器的选择器自检，把结果发回给开发者校准。本文件可直接编辑，无需改代码。",
+  "creator_home": "https://creator.xiaohongshu.com",
+  "publish_image_url": "https://creator.xiaohongshu.com/publish/publish?from=homepage&target=image",
+  "publish_video_url": "https://creator.xiaohongshu.com/publish/publish?from=homepage&target=video",
+  "selectors": {
+    "login_avatar": "img.avatar, .user-avatar img",
+    "publish_button": "button:has-text('发布')",
+    "publish_content": "[contenteditable='true'], textarea[placeholder*='正文']",
+    "publish_title": "input[placeholder*='标题'], textarea[placeholder*='标题']",
+    "publish_topic": "input[placeholder*='话题']",
+    "publish_upload": "input[type='file']"
+  },
+  "xhs_home": "https://www.rednote.com",
+  "message_page": {
+    "login_flag": ".login-container",
+    "conv_item": ".xhs-im-conv-item[data-conv-kind=\"c2c\"]",
+    "conv_id_attr": "data-conv-id",
+    "conv_name": ".xhs-im-conv-item__name",
+    "conv_preview": ".xhs-im-conv-item__summary-text",
+    "conv_time": ".xhs-im-conv-item__time",
+    "conv_unread": ".xhs-im-conv-item__bottom-right",
+    "chat_window": ".xhs-im-chat-window",
+    "msg_item": ".xhs-im-msg-list .chat-item",
+    "bubble": ".chat-item__bubble",
+    "bubble_text": ".xhs-im-bubble__text",
+    "bubble_me": ".chat-item__bubble--me",
+    "bubble_other": ".chat-item__bubble--other",
+    "editor": ".xhs-im-chat-window .xhs-im-input-bar-editor",
+    "send_btn": ".xhs-im-input-bar-send",
+    "chat_url": "https://www.rednote.com/chat"
+  },
+  "comment_page": {
+    "_note": "评论区采集：多组备选选择器，代码按序尝试",
+    "profile_url_tpl": "https://www.rednote.com/user/profile/{user_id}",
+    "note_link": "a[href*='/explore/'], a[href*='/discovery/item/']",
+    "note_title": ".note-item .title, .note-card .title",
+    "comments_container": ".comments-container, .comment-list, [class*='comment-list']",
+    "comment_item": ".comment-item, [class*='comment-item']",
+    "comment_author": ".comment-item .author-name, .comment-item [class*='author']",
+    "comment_text": ".comment-item .comment-content, .comment-item [class*='content']",
+    "comment_time": ".comment-item .comment-time, .comment-item [class*='time']",
+    "load_more": "text=展开更多评论, text=查看更多评论, text=加载更多",
+    "note_close": ".note-detail-modal .close-btn, [class*='close']"
+  }
+}

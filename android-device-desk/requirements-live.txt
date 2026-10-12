@@ -1,0 +1,2 @@
+# Optional embedded scrcpy decoder; normal device tools work without it.
+av>=16,<17

@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "矩阵工作台 · 浏览辅助与评论采集",
+  "version": "1.2.0",
+  "description": "手动选择滚动区域执行有时限的浏览计划，检测页面显示问题和平台提醒；不自动点赞、评论、发布或处理验证。",
+  "content_scripts": [
+    {
+      "matches": ["https://www.douyin.com/*", "https://douyin.com/*", "https://www.xiaohongshu.com/*", "https://xiaohongshu.com/*", "https://www.rednote.com/*", "https://rednote.com/*", "https://creator.rednote.com/*", "https://creator.xiaohongshu.com/*"],
+      "js": ["page_guard.js", "content.js", "browse_assistant.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
